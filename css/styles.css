@@ -1,3 +1,7 @@
-#show-list {
+#show-list, #show-completed {
   display: none;
+}
+
+ul {
+  list-style: none;
 }
