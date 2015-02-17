@@ -17,6 +17,11 @@ $(document).ready(function() {
         newCompletedTaskList[i] = $(this).val();
     });
 
+    var completedList = {}
+    newCompletedTaskList.forEach(function(completedTask) {
+       completedList = { task: completedTask};
+    });
+
     newCompletedTaskList.forEach(function(task) {
     $('ul#completed-tasks').append('<li>'+ task +'</li>');
     });
